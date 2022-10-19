@@ -10,7 +10,7 @@ As a data expert you work at a car dealership company which sells new cars of va
 
 Using pen and paper (or computer software if you are skillful at creating digital diagrams), design a database to meet the minimal requirements of your boss. The minimal information to be recorded is described below:
 
-1. **Cars** - e.g. the vehicle identification number (VIN), manufacturer, model, year, and color of the cars in your company's inventory.
+1. **Cars** - e .g. the vehicle identification number (VIN), manufacturer, model, year, and color of th cars in your company's inventory.
 
 1. **Customers** - e.g. the customer ID, name, phone number, email, address, city, state/province, country, and zip/postal code of the customers.
 
