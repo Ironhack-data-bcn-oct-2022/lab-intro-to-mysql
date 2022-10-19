@@ -1,41 +1,3 @@
-DROP DATABASE IF EXISTS Cardealership;
-CREATE DATABASE Cardealership; 
-USE Cardealership;
-
-CREATE TABLE Cars (
-VIN INT PRIMARY KEY NOT NULL,
-Manufacturer VARCHAR(20) NOT NULL,
-Model VARCHAR(10) NOT NULL,
-Year DATE NOT NULL,
-Color VARCHAR(10) NOT NULL
-);
-
-CREATE TABLE Customers (
-customer_id INT PRIMARY KEY NOT NULL,
-first_name VARCHAR(20) NOT NULL,
-phone VARCHAR(10) NOT NULL,
-email VARCHAR(20) ,
-adress VARCHAR(3),
-city DATE,
-state_province VARCHAR(20),
-country VARCHAR(20),
-zip_postal VARCHAR(8)
-);
-
-CREATE TABLE Salespersons (
-Staff_idcurrent_dept_emp INT PRIMARY KEY NOT NULL,
-Name VARCHAR(20),
-Store VARCHAR(15)
-);
-
-CREATE TABLE Invoices (
-invoice_id INT PRIMARY KEY NOT NULL,
-date_ DATE NOT NULL,
-car VARCHAR(20) NOT NULL,
-customer VARCHAR(20) NOT NULL,
-salesperson VARCHAR(20)
-);
-
 -- MySQL Workbench Forward Engineering
 
 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
@@ -60,7 +22,6 @@ USE `Cardealership` ;
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `Cardealership`.`Customers` (
   `customer_id` INT NOT NULL,
-  `first_namecurrent_dept_empdept_emp_latest_date VARCHAR(20) NOT NULL,
   `phone` VARCHAR(10) NOT NULL,
   `email` VARCHAR(20) NULL DEFAULT NULL,
   `adress` VARCHAR(3) NULL DEFAULT NULL,
@@ -138,5 +99,3 @@ COLLATE = utf8mb4_0900_ai_ci;
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
-
-
