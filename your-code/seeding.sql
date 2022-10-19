@@ -1,3 +1,5 @@
+USE lab_mysql;
+
 INSERT IGNORE INTO cars (VIN, manufacturer, model, year, color) VALUES 
 ("3K096I98581DHSNUP", "Volkswagen", "Tiguan", 2019, "Blue"),
 ("ZM8G7BEUQZ97IH46V", "Peugeot", "Rifter", 2019, "Red"),
@@ -18,7 +20,7 @@ INSERT IGNORE INTO salespersons (staff_id, name, store) VALUES
 (00002, "Anna Sthesia", "Barcelona"),
 (00003, "Paul Molive", "Berlin"),
 (00004, "Gail Forcewind", "Paris"),
-(00005, "Paige Turne", "Mimia"),
+(00005, "Paige Turner", "Mimia"),
 (00006, "Bob Frapples", "Mexico City"),
 (00007, "Walter Melon", "Amsterdam"),
 (00008, "Shonda Leer", "São Paulo")
